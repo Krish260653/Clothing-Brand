@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Syne", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-gazu-black: #111111;
+  --color-gazu-dark: #1A1A1A;
+  --color-gazu-grey: #666666;
+  --color-gazu-light: #F6F6F4;
+  --color-gazu-card: #ECECE9;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F6F6F4;
+}
+
+/* Custom editorial typography rules */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-body {
+  font-family: var(--font-sans);
+}
+
+/* Subtle luxury grain / backdrop */
+.editorial-tracking {
+  letter-spacing: -0.03em;
+}
+
+.caps-tracking {
+  letter-spacing: 0.14em;
+}
+
+/* Smooth hidden scrollbars where needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
